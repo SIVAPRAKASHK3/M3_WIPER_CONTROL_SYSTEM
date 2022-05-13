@@ -33,7 +33,7 @@
 
 # Badges
 * Codiga - Static Code Analysis
-# Codiga - CODE QUALITY SCORE
+# Codiga - Code Quality Score
 [![codiga](https://img.shields.io/badge/CODIGA_QUALITY_SCORE-100-green.svg)](https://api.codiga.io/project/33422/score/svg)
 # Codiga - Static Code Analysis
 [![codiga](https://img.shields.io/badge/CODIGA_GRADE-A-green.svg)](https://api.codiga.io/project/33422/status/svg)
