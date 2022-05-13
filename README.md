@@ -33,11 +33,11 @@
 
 # BADGES
 * Codiga - Static Code Analysis
-[![codiga](https://img.shields.io/badge/CODIGA_GRADE-A-green.svg)](https://api.codiga.io/project/33070/status/svg)
-#
-* Codiga - CODE QUALITY SCORE
-[![codiga](https://img.shields.io/badge/CODIGA_QUALITY_SCORE-100-green.svg)](https://api.codiga.io/project/33070/score/svg)
 
+#[![codiga](https://img.shields.io/badge/CODIGA_QUALITY_SCORE-100-green.svg)]
+https://api.codiga.io/project/33422/score/svg
+#[![codiga](https://img.shields.io/badge/CODIGA_GRADE-A-green.svg)]
+https://api.codiga.io/project/33422/status/svg
 
 # Workflow
 | Type  | LINKS  |
