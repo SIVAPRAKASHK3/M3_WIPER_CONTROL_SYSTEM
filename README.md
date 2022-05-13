@@ -31,13 +31,12 @@
 # STRUCTURAL
 ![M3 drawio (1)](https://user-images.githubusercontent.com/101009349/168335169-d1ec4319-0acd-4fe1-9b9c-336c4f424c95.png)
 
-# BADGES
+# Badges
 * Codiga - Static Code Analysis
-
-#[![codiga](https://img.shields.io/badge/CODIGA_QUALITY_SCORE-100-green.svg)]
-https://api.codiga.io/project/33422/score/svg
-#[![codiga](https://img.shields.io/badge/CODIGA_GRADE-A-green.svg)]
-https://api.codiga.io/project/33422/status/svg
+# Codiga - CODE QUALITY SCORE
+[![codiga](https://img.shields.io/badge/CODIGA_QUALITY_SCORE-100-green.svg)](https://api.codiga.io/project/33422/score/svg)
+# Codiga - Static Code Analysis
+[![codiga](https://img.shields.io/badge/CODIGA_GRADE-A-green.svg)](https://api.codiga.io/project/33422/status/svg)
 
 # Workflow
 | Type  | LINKS  |
