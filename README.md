@@ -11,7 +11,7 @@
 | Type  | LINKS  |
   |-------|--------|
   |cppcheck |[![C/C++ CI](https://github.com/SIVAPRAKASHK3/SivK_project/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/SIVAPRAKASHK3/SivK_project/actions/workflows/c-cpp.yml) |
-  | Build on WINDOWS | [![C/C++ CI](https://github.com/SIVAPRAKASHK3/M2_HomeAutomation/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/SIVAPRAKASHK3/M2_HomeAutomation/actions/workflows/c-cpp.yml) |
+  | Build on WINDOWS | [![Makefile CI](https://github.com/SIVAPRAKASHK3/SivK_project/actions/workflows/makefile.yml/badge.svg)](https://github.com/SIVAPRAKASHK3/SivK_project/actions/workflows/makefile.yml) |
   | valgrind|[![Valgrind](https://github.com/SIVAPRAKASHK3/SivK_project/actions/workflows/valgrind.yml/badge.svg)](https://github.com/SIVAPRAKASHK3/SivK_project/actions/workflows/valgrind.yml)|
 # Link
 
