@@ -2,18 +2,20 @@
 #include "MyStm32f407xx.h"
 #include <stdint.h>
 #include <stdio.h>
+
+#include "Main_heaher.h"
 #define BTN_PRESSED ENABLE
 
-void delay_functon(uint32_t hertz);
-void igniton_on(void);
-void igniton_off(void);
-void Clockwise(void);
-int wiper_on(void);
-void wiper_off(void);
-int ignition_wiper_on(void);
-void delay_1_hz(void);
-int Highspeed_wiper_on(void);
-uint32_t flag = 1;
+//void delay_functon(uint32_t hertz);
+//void igniton_on(void);
+//void igniton_off(void);
+//void Clockwise(void);
+//int wiper_on(void);
+//void wiper_off(void);
+//int ignition_wiper_on(void);
+//void delay_1_hz(void);
+//int Highspeed_wiper_on(void);
+uint32_t flag_var = 1;
 
 uint32_t _1_HZ =50000000;
 uint32_t _4_HZ =25000000;
@@ -68,46 +70,46 @@ int main(void)
 	{
 		if (GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0))
 		{
-			if ((flag == 1))
+			if ((flag_var == 1))
 			{	delay_functon(_1_HZ);
 			delay_functon(_1_HZ); // added
-				igniton_on();
+				igniton_on_btn();
 
 			}
-			else if ((flag == 2)){
-				while(flag==2){
-				if(wiper_on()==1){
-					flag++;
+			else if ((flag_var == 2)){
+				while(flag_var==2){
+				if(wiper_on_function()==1){
+					flag_var++;
 					break;}
 				}
 			}
-			else if (flag == 3)
+			else if (flag_var == 3)
 			{
-				while(flag==3){
+				while(flag_var==3){
 					if(ignition_wiper_on()==1){
-						flag++;
+						flag_var++;
 						break;}
 					}
 			}
-			else if (flag == 4)
+			else if (flag_var == 4)
 			{
-				while(flag==4){
+				while(flag_var==4){
 					if(Highspeed_wiper_on()==1){
-						flag++;
+						flag_var++;
 					    	break;}
 			Highspeed_wiper_on();
 							}
 								}
-			else if (flag == 5)
+			else if (flag_var == 5)
 			{GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0);
 			GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0);
-				wiper_off();
-				flag++;
+				wiper_off_function();
+				flag_var++;
 			}
-			else if(flag==6) {
+			else if(flag_var==6) {
 				delay_functon(_1_HZ);
 				delay_functon(_1_HZ);
-			igniton_off();
+			igniton_off_btn();
 			}
 			else
 				break;
@@ -119,20 +121,19 @@ void delay_functon(uint32_t hertz)
 	for (uint32_t i_loop = 0; i_loop < hertz; i_loop++);
 }
 
-void igniton_on(void)
+void igniton_on_btn(void)
 {
 	delay_functon(_1_HZ);
 	delay_functon(_1_HZ);
-
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_14);//red on
-	flag++;
+	flag_var++;
 }
 
-void igniton_off(void)
+void igniton_off_btn(void)
 {
 	GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_14, 0);
-	flag++;
+	flag_var++;
 }
 int ignition_wiper_on(void)
 {
@@ -165,7 +166,7 @@ int ignition_wiper_on(void)
 	else
 		return 0;
 }
-int wiper_on(void)
+int wiper_on_function(void)
 {
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_15);
 	delay_functon(_1_HZ);
@@ -199,7 +200,7 @@ int wiper_on(void)
 		return 0;
 }
 
-void wiper_off(void)
+void wiper_off_function(void)
 {
 
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_13);

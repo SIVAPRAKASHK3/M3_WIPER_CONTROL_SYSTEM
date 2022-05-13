@@ -1,8 +1,8 @@
-../Src/main.c:23:5:main	72	static
-../Src/main.c:117:6:delay_functon	24	static
-../Src/main.c:122:6:igniton_on	8	static
-../Src/main.c:131:6:igniton_off	8	static
-../Src/main.c:137:5:ignition_wiper_on	8	static
-../Src/main.c:168:5:wiper_on	8	static
-../Src/main.c:202:6:wiper_off	8	static
-../Src/main.c:219:5:Highspeed_wiper_on	8	static
+../Src/main.c:25:5:main	72	static
+../Src/main.c:119:6:delay_functon	24	static
+../Src/main.c:124:6:igniton_on_btn	8	static
+../Src/main.c:132:6:igniton_off_btn	8	static
+../Src/main.c:138:5:ignition_wiper_on	8	static
+../Src/main.c:169:5:wiper_on_function	8	static
+../Src/main.c:203:6:wiper_off_function	8	static
+../Src/main.c:220:5:Highspeed_wiper_on	8	static

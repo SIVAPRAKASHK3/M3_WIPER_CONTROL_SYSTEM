@@ -416,21 +416,21 @@ LOAD c:/st/stm32cubeide_1.9.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
                 0x00000000080008c0       0x2a ./Src/main.o
                 0x00000000080008c0                delay_functon
  *fill*         0x00000000080008ea        0x2 
- .text.igniton_on
+ .text.igniton_on_btn
                 0x00000000080008ec       0x3c ./Src/main.o
-                0x00000000080008ec                igniton_on
- .text.igniton_off
+                0x00000000080008ec                igniton_on_btn
+ .text.igniton_off_btn
                 0x0000000008000928       0x30 ./Src/main.o
-                0x0000000008000928                igniton_off
+                0x0000000008000928                igniton_off_btn
  .text.ignition_wiper_on
                 0x0000000008000958       0xd0 ./Src/main.o
                 0x0000000008000958                ignition_wiper_on
- .text.wiper_on
+ .text.wiper_on_function
                 0x0000000008000a28       0xd0 ./Src/main.o
-                0x0000000008000a28                wiper_on
- .text.wiper_off
+                0x0000000008000a28                wiper_on_function
+ .text.wiper_off_function
                 0x0000000008000af8       0x64 ./Src/main.o
-                0x0000000008000af8                wiper_off
+                0x0000000008000af8                wiper_off_function
  .text.Highspeed_wiper_on
                 0x0000000008000b5c       0xd0 ./Src/main.o
                 0x0000000008000b5c                Highspeed_wiper_on
@@ -614,8 +614,9 @@ LOAD c:/st/stm32cubeide_1.9.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
                 0x0000000020000000                _sdata = .
  *(.data)
  *(.data*)
- .data.flag     0x0000000020000000        0x4 ./Src/main.o
-                0x0000000020000000                flag
+ .data.flag_var
+                0x0000000020000000        0x4 ./Src/main.o
+                0x0000000020000000                flag_var
  .data._1_HZ    0x0000000020000004        0x4 ./Src/main.o
                 0x0000000020000004                _1_HZ
  .data._4_HZ    0x0000000020000008        0x4 ./Src/main.o
@@ -714,7 +715,7 @@ LOAD c:/st/stm32cubeide_1.9.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_ranges  0x0000000000000060       0x48 ./Src/main.o
  .debug_ranges  0x00000000000000a8       0x20 ./Startup/startup_stm32f407vgtx.o
 
-.debug_macro    0x0000000000000000     0x24b3
+.debug_macro    0x0000000000000000     0x24b7
  .debug_macro   0x0000000000000000       0x8f ./Driver/src/MyStm32f407xx_gpio_driver.o
  .debug_macro   0x000000000000008f      0xa84 ./Driver/src/MyStm32f407xx_gpio_driver.o
  .debug_macro   0x0000000000000b13      0x174 ./Driver/src/MyStm32f407xx_gpio_driver.o
@@ -726,46 +727,46 @@ LOAD c:/st/stm32cubeide_1.9.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_macro   0x0000000000000ef5      0x1df ./Driver/src/MyStm32f407xx_gpio_driver.o
  .debug_macro   0x00000000000010d4      0x674 ./Driver/src/MyStm32f407xx_gpio_driver.o
  .debug_macro   0x0000000000001748       0xc4 ./Driver/src/MyStm32f407xx_gpio_driver.o
- .debug_macro   0x000000000000180c      0x1f4 ./Src/main.o
- .debug_macro   0x0000000000001a00       0x52 ./Src/main.o
- .debug_macro   0x0000000000001a52       0x1e ./Src/main.o
- .debug_macro   0x0000000000001a70       0x3c ./Src/main.o
- .debug_macro   0x0000000000001aac       0x34 ./Src/main.o
- .debug_macro   0x0000000000001ae0       0x16 ./Src/main.o
- .debug_macro   0x0000000000001af6       0x35 ./Src/main.o
- .debug_macro   0x0000000000001b2b      0x341 ./Src/main.o
- .debug_macro   0x0000000000001e6c       0x10 ./Src/main.o
- .debug_macro   0x0000000000001e7c       0x16 ./Src/main.o
- .debug_macro   0x0000000000001e92       0x43 ./Src/main.o
- .debug_macro   0x0000000000001ed5       0x34 ./Src/main.o
- .debug_macro   0x0000000000001f09       0x10 ./Src/main.o
- .debug_macro   0x0000000000001f19       0x58 ./Src/main.o
- .debug_macro   0x0000000000001f71       0x71 ./Src/main.o
- .debug_macro   0x0000000000001fe2       0x1c ./Src/main.o
- .debug_macro   0x0000000000001ffe      0x12a ./Src/main.o
- .debug_macro   0x0000000000002128       0x10 ./Src/main.o
- .debug_macro   0x0000000000002138       0x1c ./Src/main.o
- .debug_macro   0x0000000000002154       0x52 ./Src/main.o
- .debug_macro   0x00000000000021a6       0x22 ./Src/main.o
- .debug_macro   0x00000000000021c8       0x10 ./Src/main.o
- .debug_macro   0x00000000000021d8       0x52 ./Src/main.o
- .debug_macro   0x000000000000222a       0xd5 ./Src/main.o
- .debug_macro   0x00000000000022ff       0x1c ./Src/main.o
- .debug_macro   0x000000000000231b       0x3d ./Src/main.o
- .debug_macro   0x0000000000002358       0x16 ./Src/main.o
- .debug_macro   0x000000000000236e      0x145 ./Src/main.o
+ .debug_macro   0x000000000000180c      0x1f8 ./Src/main.o
+ .debug_macro   0x0000000000001a04       0x52 ./Src/main.o
+ .debug_macro   0x0000000000001a56       0x1e ./Src/main.o
+ .debug_macro   0x0000000000001a74       0x3c ./Src/main.o
+ .debug_macro   0x0000000000001ab0       0x34 ./Src/main.o
+ .debug_macro   0x0000000000001ae4       0x16 ./Src/main.o
+ .debug_macro   0x0000000000001afa       0x35 ./Src/main.o
+ .debug_macro   0x0000000000001b2f      0x341 ./Src/main.o
+ .debug_macro   0x0000000000001e70       0x10 ./Src/main.o
+ .debug_macro   0x0000000000001e80       0x16 ./Src/main.o
+ .debug_macro   0x0000000000001e96       0x43 ./Src/main.o
+ .debug_macro   0x0000000000001ed9       0x34 ./Src/main.o
+ .debug_macro   0x0000000000001f0d       0x10 ./Src/main.o
+ .debug_macro   0x0000000000001f1d       0x58 ./Src/main.o
+ .debug_macro   0x0000000000001f75       0x71 ./Src/main.o
+ .debug_macro   0x0000000000001fe6       0x1c ./Src/main.o
+ .debug_macro   0x0000000000002002      0x12a ./Src/main.o
+ .debug_macro   0x000000000000212c       0x10 ./Src/main.o
+ .debug_macro   0x000000000000213c       0x1c ./Src/main.o
+ .debug_macro   0x0000000000002158       0x52 ./Src/main.o
+ .debug_macro   0x00000000000021aa       0x22 ./Src/main.o
+ .debug_macro   0x00000000000021cc       0x10 ./Src/main.o
+ .debug_macro   0x00000000000021dc       0x52 ./Src/main.o
+ .debug_macro   0x000000000000222e       0xd5 ./Src/main.o
+ .debug_macro   0x0000000000002303       0x1c ./Src/main.o
+ .debug_macro   0x000000000000231f       0x3d ./Src/main.o
+ .debug_macro   0x000000000000235c       0x16 ./Src/main.o
+ .debug_macro   0x0000000000002372      0x145 ./Src/main.o
 
-.debug_line     0x0000000000000000     0x1180
+.debug_line     0x0000000000000000     0x1193
  .debug_line    0x0000000000000000      0x91e ./Driver/src/MyStm32f407xx_gpio_driver.o
- .debug_line    0x000000000000091e      0x7de ./Src/main.o
- .debug_line    0x00000000000010fc       0x84 ./Startup/startup_stm32f407vgtx.o
+ .debug_line    0x000000000000091e      0x7f1 ./Src/main.o
+ .debug_line    0x000000000000110f       0x84 ./Startup/startup_stm32f407vgtx.o
 
-.debug_str      0x0000000000000000     0x9cf0
+.debug_str      0x0000000000000000     0x9d17
  .debug_str     0x0000000000000000     0x5e7e ./Driver/src/MyStm32f407xx_gpio_driver.o
                                        0x6082 (size before relaxing)
- .debug_str     0x0000000000005e7e     0x3e41 ./Src/main.o
-                                       0x9c3f (size before relaxing)
- .debug_str     0x0000000000009cbf       0x31 ./Startup/startup_stm32f407vgtx.o
+ .debug_str     0x0000000000005e7e     0x3e68 ./Src/main.o
+                                       0x9c5d (size before relaxing)
+ .debug_str     0x0000000000009ce6       0x31 ./Startup/startup_stm32f407vgtx.o
                                          0x6f (size before relaxing)
 
 .comment        0x0000000000000000       0x50
