@@ -22,6 +22,7 @@
   |Third press  |->  blue,green,orange in this order wiper runs at 8Hz frequency. |
   |Fourth press |->  wiper turn off comes to blue position.|
   |Fifth press  |->  Red led turn off.|
+#
 # COMPONENT AND DISCRIPTION
 * The STM32F4DISCOVERY Discovery kit allows users to easily develop applications with he STM32F407VG high-performance microcontroller with the Arm Cortex-M4 32-bit
 core.
@@ -38,13 +39,14 @@ libraries and examples available with the STM32CubeF4 MCU Package.
 
 <img width="960" alt="2022-05-13-23-56-40" src="https://user-images.githubusercontent.com/101009349/168346582-c11e1226-ef0a-4f04-be1c-02d75a99246a.png">
 
-
+#
 # SIMULATED OUTPUT WITH EXPLANATION
 #
 https://user-images.githubusercontent.com/101009349/168340555-0dd39abc-64b2-454c-bc48-726e62435a83.mp4
-
+#
 # CIRCUIT FLOW DIAGRAM
 ![M3_BEHAVIOURAL drawio](https://user-images.githubusercontent.com/101009349/168347074-4486321c-bc49-4d59-a4ec-c86ec88af664.png)
 # CONCLUSION
+
 
 
