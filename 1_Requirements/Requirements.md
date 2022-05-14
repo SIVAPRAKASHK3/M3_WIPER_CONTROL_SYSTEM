@@ -9,16 +9,20 @@
    * Referred many research papers on wiper control.
    * Referred many e-sources for coding part.
    * Surfed in internet(youtube, google scholar).
-    
-    
+     * [Dynamic Modeling and Control of the Windshield Wiper Mechanisms](http://www.wseas.us/e-library/transactions/systems/2009/29-486.pdf)
+     * Mahindra 
+     WIPER CONTROL
+
+      <img width="960" alt="2022-05-14-19-56-22" src="https://user-images.githubusercontent.com/101009349/168429982-15e602b9-d560-4a53-8403-5cce7a27241e.png">
+   
+      <img width="960" alt="2022-05-14-19-56-41" src="https://user-images.githubusercontent.com/101009349/168430027-d01e134a-b244-4b73-af1d-2f2a29a80066.png">
+
+<img width="960" alt="2022-05-14-19-56-41" src="https://user-images.githubusercontent.com/101009349/168430101-828ddb83-3895-4c6b-a9ab-6510cb15e39a.png">
        
 ##  Key feautures
    * Controlling speeds of wiper by key presses.
    * Three differnt speed of wiper rotation available.
-     
-
-
-
+    
 # The 4W's and a H 
 
 ## WHAT
