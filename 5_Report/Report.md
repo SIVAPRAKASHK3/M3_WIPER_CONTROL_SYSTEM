@@ -31,6 +31,11 @@ core.
 speaker driver, LEDs, push-buttons and a USB OTG Micro-AB connector. Specialized addon boards can be connected by means of the extension header connectors. The
 STM32F4DISCOVERY Discovery kit comes with the STM32 comprehensive free software
 libraries and examples available with the STM32CubeF4 MCU Package.
+#
+# SIMPLE BLOCK DIAGRAM
+![Untitled Diagram drawio](https://user-images.githubusercontent.com/101009349/168413690-17e27f2e-dabc-4971-963a-b5196207648d.png)
+
+#
 # SIMULATION QEMU
 ## OFF STATE
 <img width="960" alt="2022-05-13-23-55-56" src="https://user-images.githubusercontent.com/101009349/168346599-7507051e-b152-4255-a969-6b3e27a2564e.png">
