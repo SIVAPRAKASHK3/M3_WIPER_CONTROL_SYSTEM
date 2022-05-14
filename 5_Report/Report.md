@@ -57,7 +57,8 @@ https://user-images.githubusercontent.com/101009349/168340555-0dd39abc-64b2-454c
   * Button pressed 6th - RED LIGHT off, which indicates the CAR IGNITION OFF. 
 #
 # CIRCUIT FLOW DIAGRAM
-![M3_BEHAVIOURAL drawio](https://user-images.githubusercontent.com/101009349/168347074-4486321c-bc49-4d59-a4ec-c86ec88af664.png)
+![BEHAVIOUR_1_UPDATE](https://user-images.githubusercontent.com/101009349/168428514-d7e71706-f66d-4952-8020-50cd209a6abb.png)
+
 #
 # CONCLUSION
 #
