@@ -1,2 +1,2 @@
 # BEHAVIOURAL DIAGRAM
-![M3_BEHAVIOURAL drawio](https://user-images.githubusercontent.com/101009349/168323198-c28ec748-4d0b-40ea-a16e-3e63be8b0651.png)
+![BEHAVIOUR_1_UPDATE](https://user-images.githubusercontent.com/101009349/168427821-b4a4ddbb-3158-4cd5-aea0-430c3ade6002.png)
