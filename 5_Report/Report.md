@@ -48,6 +48,13 @@ libraries and examples available with the STM32CubeF4 MCU Package.
 # SIMULATED OUTPUT WITH EXPLANATION
 #
 https://user-images.githubusercontent.com/101009349/168340555-0dd39abc-64b2-454c-bc48-726e62435a83.mp4
+##  PROCEDURE
+  * Button pressed 1st - RED LIGHT glows, which indicates the CAR IGNITION ON.
+  * Button pressed 2nd - BLUE, GREEN, ORANGE LED glows with slow movement with some delay.
+  * Button pressed 3rd - BLUE, GREEN, ORANGE LED glows with medium speed movement with some delay.
+  * Button pressed 4th - BLUE, GREEN, ORANGE LED glows with fast speed movement with some delay.
+  * Button pressed 5th - ORANGE, GREEN, BLUE LED glows anticlockwise direction indicating wiper off.
+  * Button pressed 6th - RED LIGHT off, which indicates the CAR IGNITION OFF. 
 #
 # CIRCUIT FLOW DIAGRAM
 ![M3_BEHAVIOURAL drawio](https://user-images.githubusercontent.com/101009349/168347074-4486321c-bc49-4d59-a4ec-c86ec88af664.png)
