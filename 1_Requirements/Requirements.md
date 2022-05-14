@@ -1,18 +1,23 @@
 # REQUIREMENTS
 
 ##  Feautures
-     * Easy in controlling speeds of wiper rotate movement.
-     * Turning on/off car on button for 2 Seconds.
-     * controlling speeds using button press count.
+   * Easy in controlling speeds of wiper rotate movement.
+   * Turning on/off car on button for 2 Seconds.
+   * controlling speeds using button press count.
 
 ## Research
-    * Referred many research papers on wiper control.
-    * Referred many e-sources for coding part.
-    * Surfed in internet(youtube, google scholar).
+   * Referred many research papers on wiper control.
+   * Referred many e-sources for coding part.
+   * Surfed in internet(youtube, google scholar).
+    
+    
        
 ##  Key feautures
-    * Controlling speeds of wiper by key presses.
-    * Three differnt speed of wiper rotation available.
+   * Controlling speeds of wiper by key presses.
+   * Three differnt speed of wiper rotation available.
+     
+
+
 
 # The 4W's and a H 
 
