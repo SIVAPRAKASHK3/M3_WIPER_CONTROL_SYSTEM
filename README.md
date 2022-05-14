@@ -47,7 +47,7 @@
 # Flowchart
 
 # BEHAVIOURAL
-![M3_BEHAVIOURAL drawio](https://user-images.githubusercontent.com/101009349/168335043-ee840828-95b0-46f3-9d89-a44b888aefb9.png)
+![BEHAVIOUR_1_UPDATE](https://user-images.githubusercontent.com/101009349/168427285-b6107017-945c-489e-af7a-24a7c450f7c3.png)
 # STRUCTURAL
 ![M3 drawio (1)](https://user-images.githubusercontent.com/101009349/168335169-d1ec4319-0acd-4fe1-9b9c-336c4f424c95.png)
 
