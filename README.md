@@ -40,6 +40,10 @@
 *   Rather than going to install LINUX OS in BIOS, you can also use VIRTUAL BOX to run LINUX in WINDOWS.
 *   GitHub desktop(To push and pull the changes without command through GIT BASH).
 #
+# Block Diagram
+![Untitled Diagram drawio](https://user-images.githubusercontent.com/101009349/168413745-0a8717c2-23bd-477f-b618-397c8d2a211c.png)
+
+#
 # Flowchart
 
 # BEHAVIOURAL
