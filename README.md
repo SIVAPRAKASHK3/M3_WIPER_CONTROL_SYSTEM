@@ -1,13 +1,13 @@
 # M3_WIPER_SYSTEM
 | FOLDER | CONTENTS |
 | ------ | -------- |
-| 0_Abstract | |
-| 1_Requirements |  |
-| 2_Design | |
-| 3_Implementation | |
-| 4_TestCases | README.md |
-| 5_Report | FinalReport.md |
-| 6_Output | Video, Readme.md|
+| 0_Abstract |Abstract.md|
+| 1_Requirements | Requirements.md|
+| 2_Design |README.md |
+| 3_Implementation |Implementation.md|
+| 4_TestCases |Testcase.md|
+| 5_Report |Report.md|
+| 6_Output |Output.md|
 # WIPER_SYSTEM
 #
 * This project is based on implementing the *__WIPER SYSYTEM__*. 
