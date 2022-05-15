@@ -73,12 +73,12 @@ int main(void)
 			if ((flag_var == 1))
 			{	delay_functon(_1_HZ);
 			delay_functon(_1_HZ); // added
-				igniton_on_btn();
+				igniton_on_btn();// TO TURN ON THE RED LED
 
 			}
 			else if ((flag_var == 2)){
 				while(flag_var==2){
-				if(wiper_on_function()==1){
+				if(wiper_on_function()==1){ // WIPER FUNCTION CALLWIPER FUNCTION W
 					flag_var++;
 					break;}
 				}
