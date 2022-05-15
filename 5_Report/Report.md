@@ -45,9 +45,13 @@ libraries and examples available with the STM32CubeF4 MCU Package.
 <img width="960" alt="2022-05-13-23-56-40" src="https://user-images.githubusercontent.com/101009349/168346582-c11e1226-ef0a-4f04-be1c-02d75a99246a.png">
 
 #
-# SIMULATED OUTPUT WITH EXPLANATION
+# SIMULATED 
+
+https://user-images.githubusercontent.com/101009349/168457366-fe4bdd92-eb85-413d-a542-e91669e27256.mp4
+
+OUTPUT WITH EXPLANATION
 #
-https://user-images.githubusercontent.com/101009349/168340555-0dd39abc-64b2-454c-bc48-726e62435a83.mp4
+
 ##  PROCEDURE
   * Button pressed 1st - RED LIGHT glows, which indicates the CAR IGNITION ON.
   * Button pressed 2nd - BLUE, GREEN, ORANGE LED glows with slow movement with some delay.
