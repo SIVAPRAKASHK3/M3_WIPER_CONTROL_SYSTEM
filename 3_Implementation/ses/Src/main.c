@@ -26,7 +26,7 @@ int main(void)
 {
 	GPIO_Handle_t GpioLed, GpioLed1, GpioLed2, GpioLed3, GpioBtn;
 
-	GpioLed.pGPIOx = GPIOD;
+	GpioLed.pGPIOx = GPIOD;           //configuring the port D and  pin 12 for data out
 	GpioLed.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_12;
 	GpioLed.GPIO_PinConfig.GPIO_PinMode = GPIO_MODE_OUT;
 	GpioLed.GPIO_PinConfig.GPIO_PinSpeed = GPIO_SPEED_FAST;
@@ -34,7 +34,7 @@ int main(void)
 	GPIO_PeriClockControl(GPIOD, ENABLE);
 	GPIO_Init(&GpioLed);
 
-	GpioLed1.pGPIOx = GPIOD;
+	GpioLed1.pGPIOx = GPIOD;    //configuring the port D and  pin 13 for data out
 	GpioLed1.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_13;
 	GpioLed1.GPIO_PinConfig.GPIO_PinMode = GPIO_MODE_OUT;
 	GpioLed1.GPIO_PinConfig.GPIO_PinSpeed = GPIO_SPEED_FAST;
@@ -42,7 +42,7 @@ int main(void)
 	GPIO_PeriClockControl(GPIOD, ENABLE);
 	GPIO_Init(&GpioLed1);
 
-	GpioLed2.pGPIOx = GPIOD;
+	GpioLed2.pGPIOx = GPIOD;//configuring the port D and  pin 14 for data out
 	GpioLed2.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_14;
 	GpioLed2.GPIO_PinConfig.GPIO_PinMode = GPIO_MODE_OUT;
 	GpioLed2.GPIO_PinConfig.GPIO_PinSpeed = GPIO_SPEED_FAST;
@@ -50,7 +50,7 @@ int main(void)
 	GPIO_PeriClockControl(GPIOD, ENABLE);
 	GPIO_Init(&GpioLed2);
 
-	GpioLed3.pGPIOx = GPIOD;
+	GpioLed3.pGPIOx = GPIOD;//configuring the port D and  pin 15 for data out
 	GpioLed3.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_15;
 	GpioLed3.GPIO_PinConfig.GPIO_PinMode = GPIO_MODE_OUT;
 	GpioLed3.GPIO_PinConfig.GPIO_PinSpeed = GPIO_SPEED_FAST;
@@ -58,7 +58,7 @@ int main(void)
 	GPIO_PeriClockControl(GPIOD, ENABLE);
 	GPIO_Init(&GpioLed3);
 
-	GpioBtn.pGPIOx = GPIOA;
+	GpioBtn.pGPIOx = GPIOA;//configuring the port A and  pin 0 for data out
 	GpioBtn.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_0;
 	GpioBtn.GPIO_PinConfig.GPIO_PinMode = GPIO_MODE_IN;
 	GpioBtn.GPIO_PinConfig.GPIO_PinSpeed = GPIO_SPEED_FAST;
@@ -78,7 +78,7 @@ int main(void)
 			}
 			else if ((flag_var == 2)){
 				while(flag_var==2){
-				if(wiper_on_function()==1){ // WIPER FUNCTION CALLWIPER FUNCTION W
+				if(wiper_on_function()==1){ // WIPER FUNCTION CALLS TO TURN WIPER ON RUNS IN SLOW WIPING MODE
 					flag_var++;
 					break;}
 				}
@@ -86,7 +86,7 @@ int main(void)
 			else if (flag_var == 3)
 			{
 				while(flag_var==3){
-					if(ignition_wiper_on()==1){
+					if(ignition_wiper_on()==1){ //IGNITION WIPER ON WIPER WORKS IN MEDIUM FAST WIPING MODE
 						flag_var++;
 						break;}
 					}
@@ -94,14 +94,14 @@ int main(void)
 			else if (flag_var == 4)
 			{
 				while(flag_var==4){
-					if(Highspeed_wiper_on()==1){
+					if(Highspeed_wiper_on()==1){         // WIPER WORKS IN  FAST WIPING MODE
 						flag_var++;
 					    	break;}
 			Highspeed_wiper_on();
 							}
 								}
 			else if (flag_var == 5)
-			{GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0);
+			{GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0);       // WIPER COMES TO START POSTION AND TURN OFF
 			GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0);
 				wiper_off_function();
 				flag_var++;
@@ -109,7 +109,7 @@ int main(void)
 			else if(flag_var==6) {
 				delay_functon(_1_HZ);
 				delay_functon(_1_HZ);
-			igniton_off_btn();
+			igniton_off_btn();  //IGNNITION TURN OFF
 			}
 			else
 				break;
@@ -125,14 +125,14 @@ void igniton_on_btn(void)
 {
 	delay_functon(_1_HZ);
 	delay_functon(_1_HZ);
-	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_14);//red on
+	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_14);          //  RED  LED TURN ON
 	flag_var++;
 }
 
 void igniton_off_btn(void)
 {
 	GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0);
-	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_14, 0);
+	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_14, 0);     //RED  LED TURN OFF
 	flag_var++;
 }
 int ignition_wiper_on(void)
@@ -203,7 +203,7 @@ int wiper_on_function(void)
 void wiper_off_function(void)
 {
 
-	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_13);
+	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_13); 
 	delay_functon(_1_HZ);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_13, 0);
 
