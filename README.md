@@ -52,7 +52,9 @@
 ![M3 drawio (1)](https://user-images.githubusercontent.com/101009349/168335169-d1ec4319-0acd-4fe1-9b9c-336c4f424c95.png)
 
 # Badges
-* Codiga - Static Code Analysis
+
+# Codacy - Code Analysis
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9632790dcd0b4fe0bbba30ca55779629)](https://www.codacy.com/gh/SIVAPRAKASHK3/M3_WIPER_CONTROL_SYSTEM/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SIVAPRAKASHK3/M3_WIPER_CONTROL_SYSTEM&amp;utm_campaign=Badge_Grade)
 # Codiga - Code Quality Score
 [![codiga](https://img.shields.io/badge/CODIGA_QUALITY_SCORE-100-green.svg)](https://api.codiga.io/project/33422/score/svg)
 # Codiga - Static Code Analysis
